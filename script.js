@@ -21,10 +21,12 @@ Challenge:
 */
 const modalCloseBtn = document.getElementById('modal-close-btn');
 
-modalCloseBtn.addEventListener('click', () => {{
-    modal.style.display = 'none';
-    console.log('Modal Closed!');
-;}})
+modalCloseBtn.addEventListener('click', () => {
+    {
+        modal.style.display = 'none';
+        console.log('Modal Closed!');;
+    }
+})
 
 /*
 Challenge:
@@ -34,13 +36,14 @@ Challenge:
 3. When a user clicks "accept", prevent the default
    behaviour that triggers the refresh.
 4. Log out "form submitted".
-*/  
+*/
 const consentForm = document.getElementById('consent-form');
 const modalText = document.getElementById('modal-text');
 
 consentForm.addEventListener('submit', e => {
     e.preventDefault();
     console.log('Form Submitted');
+    
 
     /*
 Challenge:
@@ -55,25 +58,47 @@ Challenge:
         Uploading your data to the dark web...
     </p>
 </div>
-*/ 
+*/
 
-modalText.innerHTML = `
+    modalText.innerHTML = `
 <div class="modal-inner-loading">
-    <img src="images/loading.svg" class="loading">
+    <img src="images/loading.svg" alt="loading gif" class="loading">
     <p id="uploadText">
         Uploading your data to the dark web...
     </p>
 </div>
 `;
-/*   
-Challenge: 
-1. Use a setTimeout to make the phrase "Uploading
-   your data to the dark web" change to "Making the 
-   sale..." after 1.5 seconds.
-⚠️ Do not change the loading svg!
-*/   
-    
+    /*   
+    Challenge: 
+    1. Use a setTimeout to make the phrase "Uploading
+       your data to the dark web" change to "Making the 
+       sale..." after 1.5 seconds.
+    ⚠️ Do not change the loading svg!
+    */
+
     setTimeout(() => document.getElementById('uploadText').innerText = 'Making the sale...', 1500);
-})
 
-
+    /*   
+Challenge: 
+1. Make it so that 1.5 seconds after seeing the 
+   "Making the sale..." message, the modal is 
+   cleared of its content and the following 
+   string of HTML is displayed instead.
+   
+   `<h2>Thanks you sucker! </h2>
+    <p>We just sold the rights to your eternal soul.</p>
+    <div class="idiot-gif">
+        <img src="images/pirate.gif">
+    </div>
+    ` 
+*/
+    setTimeout(() => {
+        document.getElementById('modal-inner').innerHTML = 
+        `<h2>Thanks you sucker! </h2>
+        <p>We just sold the rights to your eternal soul.</p>
+        <div class="idiot-gif">
+            <img src="images/pirate.gif" alt="A laughing pirate ">
+        </div>
+        `
+    }, 3000)
+});
