@@ -43,9 +43,23 @@ const modalText = document.getElementById('modal-text');
 consentForm.addEventListener('submit', e => {
     e.preventDefault();
     console.log('Form Submitted');
+
+
+  /*   
+Challenge: 
+1. Create a const to store the user's name and
+   use a FormData method to extract the 
+   submitted name from the FormData object.
+2. Insert the user's name into the HTML string
+   that contains the final message we show our
+   users.
+*/ 
+    
+    const consentFormData = new FormData(consentForm);
+    const userName = consentFormData.get('name');
     
 
-    /*
+/*
 Challenge:
 1. Take control of the "modal-text" element. 
 2. Make it so that when a user clicks on 
@@ -93,8 +107,8 @@ Challenge:
     ` 
 */
     setTimeout(() => {
-        document.getElementById('modal-inner').innerHTML = 
-        `<h2>Thanks you sucker! </h2>
+        document.getElementById('modal-inner').innerHTML =
+            `<h2>Thanks <span class="modal-display-name">${userName}</span>, you sucker! </h2>
         <p>We just sold the rights to your eternal soul.</p>
         <div class="idiot-gif">
             <img src="images/pirate.gif" alt="A laughing pirate ">
