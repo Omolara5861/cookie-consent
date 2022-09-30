@@ -65,7 +65,15 @@ modalText.innerHTML = `
     </p>
 </div>
 `;
-
+/*   
+Challenge: 
+1. Use a setTimeout to make the phrase "Uploading
+   your data to the dark web" change to "Making the 
+   sale..." after 1.5 seconds.
+⚠️ Do not change the loading svg!
+*/   
+    
+    setTimeout(() => document.getElementById('uploadText').innerText = 'Making the sale...', 1500);
 })
 
 
