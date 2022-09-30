@@ -144,7 +144,11 @@ Challenge:
     padding: 10px 24px;
     cursor: pointer;
 }
-
+/* modal label */
+.visually-hidden {
+    position: absolute;
+    left: -5000px;
+}
 /* modal input */
 
 input{
