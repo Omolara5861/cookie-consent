@@ -132,6 +132,14 @@ Challenge:
     justify-content: center;
 }
 
+/* set up a selector for a new class
+   that uses flex-direction to reverse the order 
+   of its child elements.
+    */
+.modal-choice-btns-reverse {
+    flex-direction: row-reverse;
+}
+
 .modal-btn{
     padding: 10px 24px;
     cursor: pointer;

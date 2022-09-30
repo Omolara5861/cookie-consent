@@ -28,6 +28,26 @@ modalCloseBtn.addEventListener('click', () => {
     }
 })
 
+/*   
+Challenge: 
+1. Take control of the decline btn. (What do you
+   need to do to make that possible?)
+2. Take control of the div holding the buttons.
+3. Set up an eventListener that is triggered 
+   when a user's cursor hovers over the decline 
+   button. (Google the event to listen out for!)
+4. In index.css, set up a selector for a new class
+   that uses flex-direction to reverse the order 
+   of its child elements.
+5. Toggle that class on the div holding the buttons 
+   when a user's cursor hovers over the decline button.
+*/
+const declineBtn = document.getElementById('decline-btn');
+
+const modalChoiceBtns = document.getElementById('modal-choice-btns');
+declineBtn.addEventListener('mouseenter', () => modalChoiceBtns.classList.toggle('modal-choice-btns-reverse'));
+
+
 /*
 Challenge:
 1. Take control of the form element. 
@@ -120,6 +140,6 @@ Challenge:
 2. Make that button become usable when the final 
    modal message has been displayed to the user.
 */
-    document.getElementById('modal-close-btn').disabled = false;
+        document.getElementById('modal-close-btn').disabled = false;
     }, 3000)
 });
