@@ -36,7 +36,36 @@ Challenge:
 4. Log out "form submitted".
 */  
 const consentForm = document.getElementById('consent-form');
+const modalText = document.getElementById('modal-text');
+
 consentForm.addEventListener('submit', e => {
     e.preventDefault();
     console.log('Form Submitted');
+
+    /*
+Challenge:
+1. Take control of the "modal-text" element. 
+2. Make it so that when a user clicks on 
+   the accept button, the HTML string below
+   is inserted into the modal-text div.
+
+<div class="modal-inner-loading">
+    <img src="images/loading.svg" class="loading">
+    <p id="uploadText">
+        Uploading your data to the dark web...
+    </p>
+</div>
+*/ 
+
+modalText.innerHTML = `
+<div class="modal-inner-loading">
+    <img src="images/loading.svg" class="loading">
+    <p id="uploadText">
+        Uploading your data to the dark web...
+    </p>
+</div>
+`;
+
 })
+
+
