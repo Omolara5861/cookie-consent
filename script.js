@@ -96,7 +96,7 @@ Challenge:
 
     modalText.innerHTML = `
 <div class="modal-inner-loading">
-    <img src="images/loading.svg" alt="loading gif" class="loading">
+    <img src="img/loading.svg" alt="loading gif" class="loading">
     <p id="uploadText">
         Uploading your data to the dark web...
     </p>
@@ -131,7 +131,7 @@ Challenge:
             `<h2>Thanks <span class="modal-display-name">${userName}</span>, you sucker! </h2>
         <p>We just sold the rights to your eternal soul.</p>
         <div class="idiot-gif">
-            <img src="images/pirate.gif" alt="A laughing pirate ">
+            <img src="img/pirate.gif" alt="A laughing pirate ">
         </div>
         `
         /*   
