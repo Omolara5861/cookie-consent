@@ -1,5 +1,5 @@
 # World's Most Annoying Cookie Consent 😄
-This project is part of the Essential Javascript Concept Module from Scrimba's `The Frontend Career Path Course`. It is an annoying cookie consent project that forces the user to accept the site cookies. When the user attempts to decline the cookies, the decline button is swapped to the accept button, hence making it impossible for the user to decline the cookies. LOL 
+This project is part of the Essential Javascript Concept Module from Scrimba's `The Frontend Career Path Course`. It is an annoying cookie consent project, that forces the users to accept the site cookies. When a user attempts to decline the cookies, the decline button is swapped with the accept button, hence making it impossible for the user to decline the cookies. LOL 
 
 ## Concepts Learned
 
